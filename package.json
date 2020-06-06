@@ -1,5 +1,5 @@
 {
-  "name": "ducrails2",
+  "name": "rails-react-typescript-jest",
   "private": true,
   "dependencies": {
     "@babel/preset-react": "^7.10.1",
@@ -7,14 +7,28 @@
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.2.2",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "turbolinks": "^5.2.0"
+    "ts-loader": "^7.0.5",
+    "turbolinks": "^5.2.0",
+    "typescript": "^3.9.5"
   },
   "version": "0.1.0",
   "devDependencies": {
+    "@types/webpack-env": "^1.15.2",
+    "@typescript-eslint/eslint-plugin": "^3.1.0",
+    "@typescript-eslint/parser": "^3.1.0",
+    "eslint": "^7.2.0",
+    "eslint-config-preact": "^1.1.1",
+    "eslint-plugin-react": "^7.20.0",
     "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "lint": "eslint app/javascript/**/*.ts[x]"
   }
 }
