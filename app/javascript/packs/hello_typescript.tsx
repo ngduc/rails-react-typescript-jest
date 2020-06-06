@@ -5,7 +5,10 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import * as PropTypes from 'prop-types';
 
-const Hello = (props) => <div>Hello {props.name}!</div>;
+interface HelloProps {
+  name: string
+}
+export const Hello = (props: HelloProps): React.ReactElement => <div>Hello {props.name}!</div>;
 
 Hello.defaultProps = {
   name: 'David'
